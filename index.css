@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol li:hover{
+    cursor: pointer;
+}
+.main{
+    padding: 0px 0px;
+}
+.div1{
+    box-shadow: 0px 0px 10px 1px gray;
+    padding-bottom: 30px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: white;
+
+}
+.div1 img{
+        width: 155px;
+        height: 66px;
+        display: inline-block;
+}
+.div1 ul li{
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: bolder;
+}
+.div1 ul li:hover{
+    cursor: pointer;
+    color: #361374;
+}
+.div1 ul{
+    display: inline-block;
+    
+}
+.div1 section{
+    margin-top: -40px;
+    margin-left: 250px;
+}
+.div2{
+    
+    margin-top: 100px;
+    
+}
+.div2-1 section{
+    transition: transform 1s;
+    
+}
+.div2-1>section:hover{
+    transform: scale(1.01) ;
+    overscroll-behavior-y: none;
+
+}
+.div2-1 h2{
+    color: #361968;
+}
+.div2-1 section{
+    width: 356px;
+    height: 269px;
+    
+    border: 1px solid ;
+    display: inline-block;
+   margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    background-position: top center;
+    margin-right: 30px;
+}
+.div2-1 :first-child{
+ background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNjIiIGhlaWdodD0iMzEwIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMzYyIDMxMCI+PG1hc2sgaWQ9InByZWZpeF9fYSIgd2lkdGg9IjM2MiIgaGVpZ2h0PSIzMTAiIHg9IjAiIHk9IjAiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiPjxyZWN0IHdpZHRoPSIzNjIiIGhlaWdodD0iMzEwIiBmaWxsPSIjZmZmIiByeD0iMTYiLz48cmVjdCB3aWR0aD0iMzYxIiBoZWlnaHQ9IjMwOSIgeD0iLjUiIHk9Ii41IiBzdHJva2U9IiMwNTAyMEEiIHN0cm9rZS1vcGFjaXR5PSIuMiIgcng9IjE1LjUiLz48L21hc2s+PGcgbWFzaz0idXJsKCNwcmVmaXhfX2EpIj48cGF0aCBmaWxsPSIjRThGQ0ZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xODEuMDQ5IDIwN0M4MS4wNzggMjA3IC4wMjUgMTI1Ljk3MyAwIDI2LjAwMlYtMjAwLjUxaDM2MlYyNi4wMDJjLjAyNyA5OS45MzQtODAuOTY3IDE4MC45NzItMTgwLjkwMyAxODAuOTk4aC0uMDQ4WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PC9nPjxwYXRoIGZpbGw9InVybCgjcHJlZml4X19iKSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjA0LjU0IDE4Mi45MzRjMTUuMjQzLTcuMzI1IDI4LjIyLTE4Ljg4NSAzNi40MTUtMzMuODEyIDkuOTYxLTE4LjE0NSA4LjgzOC0zNy4wNDIgOC44MzgtNTcuMnYtMzAuMDVDMjAxLjEzMyA1OC4wMzggMTgwLjkxNyAzMSAxODAuOTE3IDMxcy0yMC4yMTkgMjcuMDM4LTY4Ljg3OSAzMC44NzJ2MzAuMDVjMCAyMC4xNTgtMS4xMTkgMzkuMDU1IDguODQ0IDU3LjIgOC4xOSAxNC45MjcgMjEuMTcyIDI2LjQ4NyAzNi40MDkgMzMuODEyIDcuNTQ1IDMuNjI1IDE1LjQ1NSA2LjI0MyAyMy42MSA4LjA2NiA4LjE1NC0xLjgyMiAxNi4wOTQtNC40NCAyMy42MzktOC4wNjZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjMzYxODY5IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xODEuMzk4IDE5MWM4LjA5Ni0xLjgyMiAxNS45NzktNC40NCAyMy40Ny04LjA2NSAxNS4xMzEtNy4zMjUgMjguMDE1LTE4Ljg4NiAzNi4xNTEtMzMuODEyIDkuODg5LTE4LjE0NiA4Ljc3Ni0zNy4wNDMgOC43NzYtNTcuMnYtMzAuMDVDMjAxLjQ4NSA1OC4wMzggMTgxLjQxNCAzMSAxODEuNDE0IDMxbC0uMDE2IDE2MFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNGREFENzgiIGQ9Ik0xODEuNDA5IDEzNi43NDRjMTAuMzk2IDAgMTguODIzLTguNDI3IDE4LjgyMy0xOC44MjNzLTguNDI3LTE4LjgyMy0xOC44MjMtMTguODIzLTE4LjgyMyA4LjQyNy0xOC44MjMgMTguODIzIDguNDI3IDE4LjgyMyAxOC44MjMgMTguODIzWiIvPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0icHJlZml4X19iIiB4MT0iNzAwMy41NyIgeDI9IjcwMDMuNTciIHkxPSIzMSIgeTI9IjE2MDMxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzg0NTNGMCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzM2MTg2OSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjwvc3ZnPg==);
+ 
+}
+.div2-1 :nth-child(2){
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNjIiIGhlaWdodD0iMzEwIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMzYyIDMxMCI+PG1hc2sgaWQ9InByZWZpeF9fYSIgd2lkdGg9IjM2MiIgaGVpZ2h0PSIzMTAiIHg9IjAiIHk9IjAiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiPjxyZWN0IHdpZHRoPSIzNjIiIGhlaWdodD0iMzEwIiBmaWxsPSIjZmZmIiByeD0iMTYiLz48cmVjdCB3aWR0aD0iMzYxIiBoZWlnaHQ9IjMwOSIgeD0iLjUiIHk9Ii41IiBzdHJva2U9IiMwNTAyMEEiIHN0cm9rZS1vcGFjaXR5PSIuMiIgcng9IjE1LjUiLz48L21hc2s+PGcgbWFzaz0idXJsKCNwcmVmaXhfX2EpIj48cGF0aCBmaWxsPSIjRkY2OTAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xODEuMDQ5IDIwNi41MUM4MS4wNzggMjA2LjUxLjAyNSAxMjUuNDgyIDAgMjUuNTEydi0yMjYuNTEzaDM2MlYyNS41MTJjLjAyNyA5OS45MzQtODAuOTY3IDE4MC45NzEtMTgwLjkwMyAxODAuOTk4aC0uMDQ4WiIgY2xpcC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuMDUiLz48L2c+PHBhdGggZmlsbD0iI0RFQkRDNyIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjgyIDE1Ny41YzAgMi40ODUtNDQuOTk1IDQuNS0xMDAuNSA0LjVTODEgMTU5Ljk4NSA4MSAxNTcuNXM0NC45OTUtNC41IDEwMC41LTQuNSAxMDAuNSAyLjAxNSAxMDAuNSA0LjVaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjRkY3NTcyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04OC4wMDYgMTU3aDEyMS45ODhhMi4wMDggMi4wMDggMCAwIDAgMS40MTUtLjU4IDIuMDAzIDIuMDAzIDAgMCAwIC41OTEtMS40MVYxMzZIODZ2MTkuMDFjMCAxLjA5OS44OTggMS45OSAyLjAwNiAxLjk5Wk0xNDIgMTM2aDEzMVY1MkgxNDYuNTRhNC41NCA0LjU0IDAgMCAwLTQuNTQgNC41MzhWMTM2WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzlFNDE3OCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTUxIDEzNWgxMTNWNjFIMTUxdjc0WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iI0RCNUU1RSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjExIDE1N2g1Ny45NjJjMi4yMyAwIDQuMDM4LTEuNzkyIDQuMDM4LTQuMDA0VjEzNmgtNjJ2MjFaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjREI1RTVFIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNzEgMTM4aDYuNDljMi40OSAwIDQuNTEtMS45MSA0LjUxLTQuMjY3VjU2LjI2N2MwLTIuMzU3LTIuMDItNC4yNjctNC41MS00LjI2N0gyNzF2ODZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBzdHJva2U9IiNGRjc1NzIiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iOCIgZD0iTTIyNyA0OVYzNmgtMzl2MTMiLz48cGF0aCBmaWxsPSIjOUU0MTc4IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xODMgMTI3aDM0di03aC0zNHY3WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzc5MkM1NiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTg4IDEyMHY3LTdabTggMHY3LTdabTcgMHY3LTdabTkgMHY3LTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjOUU0MTc4IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xODIgMTM1aDM0di03aC0zNHY3WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzc5MkM1NiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTg4IDEyOHY3LTdabTggMHY3LTdabTcgMHY3LTdabTkgMHY3LTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjOUU0MTc4IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xODMgMTI4aDM0di0xaC0zNHYxWm0tNDEgMGgzNHYtN2gtMzR2N1oiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiM3OTJDNTYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE0OSAxMjF2Ny03Wm03IDB2Ny03Wm03IDB2Ny03Wm03IDB2Ny03WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzlFNDE3OCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTQyIDEyMGgzNHYtN2gtMzR2N1ptOC03djctN1ptNyAwdjctN1ptNyAwdjctN1ptNyAwdjctN1ptLTI5IDIyaDM0di03aC0zNHY3WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iIzc5MkM1NiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTQ5IDEyOHY3LTdabTcgMHY3LTdabTcgMHY3LTdabTcgMHY3LTdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjOUU0MTc4IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNDIgMTIxaDM0di0xaC0zNHYxWm0wIDhoMzR2LTFoLTM0djFaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjRkFCNDZEIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNDAgMTI4aDM0di03aC0zNHY3Wm04MS0zaDM0di03aC0zNHY3WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggc3Ryb2tlPSIjREU4MTMxIiBzdHJva2Utd2lkdGg9Ii45MDgiIGQ9Ik0xNDYgMTIxdjdtODItMTB2N20tNzUtNHY3bTgyLTEwdjdtLTc0LTR2N204MS0xMHY3bS03NC00djdtODEtMTB2NyIvPjxwYXRoIGZpbGw9IiNGQUI0NkQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE0MCAxMjBoMzR2LTdoLTM0djdabTgxLTJoMzR2LTdoLTM0djdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBzdHJva2U9IiNERTgxMzEiIHN0cm9rZS13aWR0aD0iLjkwOCIgZD0iTTE0NyAxMTN2N204Mi05djdtLTc1LTV2N204MS05djdtLTczLTV2N204MS05djdtLTc0LTV2N204MS05djciLz48cGF0aCBmaWxsPSIjRkFCNDZEIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNDAgMTM1aDM0di03aC0zNHY3Wm04MS0yaDM0di03aC0zNHY3WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggc3Ryb2tlPSIjREU4MTMxIiBzdHJva2Utd2lkdGg9Ii45MDgiIGQ9Ik0xNDYgMTI4djdtODItOXY3bS03NS01djdtODItOXY3bS03NC01djdtODEtOXY3bS03NC01djdtODEtOXY3Ii8+PHBhdGggZmlsbD0iIzlFNDE3OCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTQwIDEyMWgzNHYtMWgtMzR2MVptODEtM2gzNHYtMWgtMzR2MVptLTgxIDExaDM0di0xaC0zNHYxWm04MS0zaDM0di0xaC0zNHYxWiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iI0ZBQjQ2RCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTgwIDEyN2gzNHYtN2gtMzR2N1oiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIHN0cm9rZT0iI0RFODEzMSIgc3Ryb2tlLXdpZHRoPSIuOTA4IiBkPSJNMTg2IDEyMHY3bTctN3Y3bTctN3Y3bTctN3Y3Ii8+PHBhdGggZmlsbD0iI0ZBQjQ2RCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTc5IDEzNWgzNHYtN2gtMzR2N1oiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIHN0cm9rZT0iI0RFODEzMSIgc3Ryb2tlLXdpZHRoPSIuOTA4IiBkPSJNMTg2IDEyOHY3bTctN3Y3bTctN3Y3bTctN3Y3Ii8+PHBhdGggZmlsbD0iIzlFNDE3OCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTgwIDEyOGgzNHYtMWgtMzR2MVoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNGQUI0NkQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE4MCAxMTJoMzR2LTdoLTM0djdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBzdHJva2U9IiNERTgxMzEiIHN0cm9rZS13aWR0aD0iLjkwOCIgZD0iTTE4NiAxMDV2N203LTd2N203LTd2N203LTd2NyIvPjxwYXRoIGZpbGw9IiNGQUI0NkQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE3OSAxMTloMzR2LTdoLTM0djdaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBzdHJva2U9IiNERTgxMzEiIHN0cm9rZS13aWR0aD0iLjkwOCIgZD0iTTE4NiAxMTJ2N203LTd2N203LTd2N203LTd2NyIvPjxwYXRoIGZpbGw9IiM5RTQxNzgiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE4MCAxMTJoMzR2LTFoLTM0djFabS05NSAyNWgxMzh2LTRIODV2NFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiM0NTIyNzciIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIxNi4xNDggMTA5LjI1OWgtLjA1NWwuMDU1LS4wMjJ2LjAyMlpNMjE0LjM5NyAxMThzMS4yMDMtNS43MDYgMS4yOTEtNy44NjVjMS42NDktLjEyIDYuMzEyLTEuNDMzIDYuMzEyLTEuNDMzLS40LS4yMDItNS4yMTMtMS41Ny02LjE0Ny0xLjgzNS0uMDQyLS40NS0uNjktNy40MTgtLjg3My03Ljg2NyAwIDAtMS42MzcgNi4wMzMtMS42NzUgNy43MzVsLjAzMy4wMDItLjAyNS4wMTdjLS43ODIuMTY2LTUuODkyIDEuMjUtNi4zMTMgMS40MjkgMCAwIDQuMjg1IDEuNTI0IDYuMDQyIDEuODMuMTk4IDEuMzEyIDEuMTUyIDcuNTYyIDEuMzU1IDcuOTg3WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjE1LjE0OCAxMDguMjU5aC0uMDU1bC4wNTUtLjAyMnYuMDIyWm0tMS43NSA4Ljc0MXMxLjIwMi01LjcwNiAxLjI5LTcuODY1YzEuNjQ5LS4xMiA2LjMxMi0xLjQzMyA2LjMxMi0xLjQzMy0uNC0uMjAyLTUuMjEzLTEuNTctNi4xNDctMS44MzUtLjA0Mi0uNDUtLjY5LTcuNDE4LS44NzMtNy44NjcgMCAwLTEuNjM3IDYuMDMzLTEuNjc1IDcuNzM1bC4wMzMuMDAyLS4wMjUuMDE3Yy0uNzgyLjE2Ni01Ljg5MiAxLjI1LTYuMzEzIDEuNDI5IDAgMCA0LjI4NSAxLjUyNCA2LjA0MiAxLjgzLjE5OCAxLjMxMiAxLjE1MyA3LjU2MiAxLjM1NiA3Ljk4N1oiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==)
+}
+.div2-1 :last-child{
+   background-image: url(https://www.phonepe.com/webstatic/6194/static/credit-hp-card-e94cb11bd212e8ffa2c99f5a303c269a.svg);
+}
+.div2-1 section h2{
+    margin-top: 60%;
+    margin-left: 10%;
+}
+.div2-1 section h2 i{
+    margin-left: 50%;
+}
+.div2-1 section:hover{
+    box-shadow: 0px 0px 10px 1px gray;
+    border: none;
+    cursor: pointer;
+}
+.div2-2 :first-child{
+width: 40%;
+display: inline-block;
+
+}
+.div2-2 :first-child h2,.div2-2 :first-child h1{
+    display: inline-block;
+    
+}
+.div2-2 :last-child{
+    width: 40%;
+    display: inline-block;
+    margin-left: 40%;
+    
+}
+.scrolling{
+    margin-top: 82px;
+    background-image: url(https://www.phonepe.com/webstatic/6390/static/bab93065eae063d167f5ea2699093877/70ff9/hp-banner-pg.jpg);
+    background-size: cover;
+    height: 62vh;
+    color: #361374;
+}
+.scrolling h1{
+    padding-left: 10%;
+    padding-top: 5%;
+    font-size: 50px;
+}
+.scrolling h2{
+  width: 50%;  
+  padding-left: 14%;
+  margin-top: 1%;
+  font-size: 40px;
+
+
+}
+.scrolling h3{
+    padding-left: 14%;
+    margin-top: 30px;
+    color:#361374;
+}
+.scrolling button{
+    padding: 15px 40px;
+    border-radius: 30px;
+    background-color: #6739b7;
+    color: white;
+    font-weight: bolder;
+    margin-left: 14%;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+
+}
+.div3{
+    height: 100vh;
+    
+}
+.div3-1{
+    
+    width: 40%;
+    height: 70vh;
+    display: inline-block;
+    margin-top: -30px;
+    
+}
+.div3-1 h1{
+    margin-bottom: 50px;
+    color: #361374;
+    font-size: 40px;
+}
+.div3-1 strong{
+    
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 25px;
+}
+.div3-1 p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.div3-2{
+    background-color: brown;
+    width: 40%;
+    height: 70vh;
+    display: inline-block;
+}
+.div4 :first-child{
+    height:211px;
+     width:550px;
+     display: block;
+     margin: auto;
+     border: 1ps solid;
+}
+.div4 button{
+    border-radius: 30px;
+    padding: 15px 100px;
+    font-weight: bolder;
+    margin: auto;
+    display: block;
+}
+
+
+.div4 button:hover{
+    cursor: pointer;
+    background-color: #371f7b;
+    color: aliceblue;
+
+}
+.div4 p{
+    padding: 10px;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 16px;
+    width: 960px;
+    margin: auto;
+    line-height: 2;
+    opacity: 0.8;
+    
+}
+.div5{
+    /* height: 200vh; */
+   
+}
+.div5-1{
+    height: 330px;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #967edd;
+    background-position: right ;
+    border-radius: 30px;
+    background-image: url(https://www.phonepe.com/webstatic/6194/static/trust-banner-861f26253b71e00c083fd5f6c2ea30fc.png);
+}
+.div5-1 img{
+    margin-top: 60px;
+    margin-left: 115px;
+    
+}
+.div5-1 section{
+    
+    width: 60%;
+    margin: auto;
+    display: inline-block;
+    
+    
+}
+.div5-1 section h1{
+    display: inline-block;
+    color: white;
+    margin-left: 30%;
+    font-size: 40px;
+    
+    
+    
+}
+
+.div5-1 section p{
+    display: inline-block;
+    color: white;
+    margin-left: 30%;
+    width: 60%;
+    line-height: 2;
+    font-size: 20px;
+    
+    
+}
+.div5-1 section section{
+    margin-left: 110px;
+}
+.div5-2>h2{
+    text-align: center;
+    color: #361968;
+    font-size: 2.52rem;
+    font-weight: 500;
+    margin: 34px;
+    height: 117px;
+    text-shadow:  0 2px 4px rgba(0,0,0,.05);
+
+}
+.div5-2 button{
+    padding: 0px 16px;
+    background-color: #07c3de;
+    border-radius: 33px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 57px;
+    border: none;
+    width: 259px;
+    color: white;
+    font-weight: 600;
+
+    
+}
+.div5-2 button i{
+    margin-left: 10px;
+    
+}
+.div5-2{
+    background-color: #e7e3fb ;
+    
+    
+}
+.div5-2-content>h1{
+    margin-bottom: 25px;
+}
+.div5-2-content>span{
+    display: block;
+    margin-bottom: 25px 0px;
+}
+.div5-2>img{
+    width: 100%;
+    height: 400px;
+    
+}
+.div5-2>section{
+    display: flex;
+    background-color: white;
+}
+.div5-2 section img{
+    height: 366px;
+    width: 466px;
+    position: block;
+    
+    display: block;
+    
+
+}
+.div5-2 section div{
+    width: 35%;
+    margin: auto;
+    margin-left: 300px;
+    background-color: white;
+    text-align: left;
+}
+.div5-2>section>div>section>h3{
+    margin: 15px 0px;
+    
+    color: #6739b7;
+}
+.div5-2>section>div>section>span{
+    margin: 10px 0px;
+    display: block;
+}
+.banner{
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-image: url(https://www.phonepe.com/webstatic/6194/static/stats-desktop-d03f14dfb53bebd5b23b63dd8e464adb.png);
+}
+.banner section{
+    padding: 50px 150px;
+    
+}
+.banner section div{
+    display: inline-block;
+    margin-right: 70px;
+}
+.banner section div span{
+    display: block;
+    font-size: xx-large;
+    color: aliceblue;
+    
+}
+.banner p{
+    color: white;
+    font-size: 30px;
+    margin-left: 15%;
+    margin-top: 20px;
+    display: inline-block;
+    
+}
+.banner  button{
+    padding: 15px 40px;
+    background-color: transparent;
+    border-radius: 30px;
+    color: white;
+    font-weight: bolder;
+    border: #4cdeff solid 2px;
+    margin-left: 50px;
+}
+.banner button:hover{
+    cursor: pointer;
+    
+}
+.footer{
+    height: 65vh;
+    position: relative;
+    z-index: -1;
+    
+}
+.footer img{
+    margin-bottom: 30%;
+    
+}
+.footer1{
+    display: inline-block;
+
+
+}
+.footer ul{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 9px;
+    position: relative;
+    bottom:30px;
+    
+}
+.footer ul li{
+    margin: 10px 0px;
+}
+.footer ul li a{
+    
+    text-decoration: none;
+    color: black;
+}
+
+
+.footer p{
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 30px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6%;
+
+   
+    
+}
+.footer>img{
+    margin-top: -43px;
+}
+.footer ul li{
+    list-style: none;
+    margin-bottom: 15px;
+
+   
+}
+.footer ul li:hover,.footer ul li a:hover{
+    color: #967edd;
+}
+.footer ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+.footer ul li:first-child{
+
+font-weight: bolder;
+margin-bottom: 30px;
+font-size: larger;
+}
+.connect{
+
+margin-left: 80%;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+.connect>img{
+margin-left: 20px;
+display: inline-block;
+
+
+}
+.connect+strong{
+font-weight: lighter;
+display: block;
+margin-left: 40%;
+
+
+
+}
+.footer button{
+padding: 10px 15px;
+border-radius: 10px;
+font-weight: bolder;
+background-color: white;
+}
